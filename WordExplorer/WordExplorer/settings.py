@@ -1,4 +1,4 @@
-"""
+﻿"""
 Django settings for WordExplorer project.
 """
 
@@ -20,12 +20,12 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': path.join(PROJECT_ROOT, 'db.sqlite3'),
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',
-        'PORT': '',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'WordExplorer',
+        'USER': 'root',
+        'PASSWORD': 'dev900126',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
