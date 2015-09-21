@@ -27,7 +27,7 @@ class WordRoot(models.Model):
     root_id = models.ForeignKey(Root)
 
     def __str__(self):
-        return self.word_id + ' <-- ' + self.root_id
+        return self.word_id.word + ' <-- ' + self.root_id.word
 
 
 @python_2_unicode_compatible
@@ -36,7 +36,7 @@ class Noun(models.Model) :
     noun = models.CharField(max_length = 20)
 
     def __str__(self):
-        return self.word_id + ' <==> ' + self.noun
+        return self.word_id.word + ' <==> ' + self.noun
 
 
 @python_2_unicode_compatible
@@ -45,4 +45,4 @@ class Adjective(models.Model) :
     adjective = models.CharField(max_length = 20)
 
     def __str__(self):
-        return self.word_id + ' <==> ' + self.adjective
+        return self.word_id.word + ' <==> ' + self.adjective
