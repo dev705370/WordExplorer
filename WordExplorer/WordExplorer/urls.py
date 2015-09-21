@@ -3,7 +3,8 @@ Definition of urls for WordExplorer.
 """
 
 from datetime import datetime
-from django.conf.urls import patterns, url
+from django.conf.urls import patterns, url, include
+from django.contrib import admin
 from app.forms import BootstrapAuthenticationForm
 
 # Uncomment the next lines to enable the admin:
@@ -12,7 +13,7 @@ from app.forms import BootstrapAuthenticationForm
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-    url(r'^', include('WordApp.urls', namespace='WordApp')),
+    #url(r'^', include('WordApp.urls', namespace='WordApp')),
     url(r'^$', 'app.views.home', name='home'),
     url(r'^contact$', 'app.views.contact', name='contact'),
     url(r'^about', 'app.views.about', name='about'),
