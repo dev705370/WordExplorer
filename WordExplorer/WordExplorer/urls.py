@@ -1,4 +1,4 @@
-"""
+﻿"""
 Definition of urls for WordExplorer.
 """
 
@@ -12,7 +12,7 @@ from app.forms import BootstrapAuthenticationForm
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-    # Examples:
+    url(r'^', include('WordApp.urls', namespace='WordApp')),
     url(r'^$', 'app.views.home', name='home'),
     url(r'^contact$', 'app.views.contact', name='contact'),
     url(r'^about', 'app.views.about', name='about'),
@@ -39,5 +39,5 @@ urlpatterns = patterns('',
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
-    # url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', include(admin.site.urls)),
 )

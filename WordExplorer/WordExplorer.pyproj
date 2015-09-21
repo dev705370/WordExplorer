@@ -30,9 +30,18 @@
     <Compile Include="app\forms.py" />
     <Compile Include="app\models.py" />
     <Compile Include="app\tests.py" />
+    <Compile Include="WordApp\admin.py" />
+    <Compile Include="WordApp\autocomplete_light_registry.py" />
+    <Compile Include="WordApp\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="app\views.py" />
     <Compile Include="app\__init__.py" />
     <Compile Include="manage.py" />
+    <Compile Include="WordApp\models.py" />
+    <Compile Include="WordApp\tests.py" />
+    <Compile Include="WordApp\views.py" />
+    <Compile Include="WordApp\__init__.py" />
     <Compile Include="WordExplorer\__init__.py" />
     <Compile Include="WordExplorer\settings.py" />
     <Compile Include="WordExplorer\urls.py" />
@@ -47,6 +56,8 @@
     <Folder Include="app\static\app\scripts\" />
     <Folder Include="app\templates\" />
     <Folder Include="app\templates\app\" />
+    <Folder Include="WordApp\" />
+    <Folder Include="WordApp\templates\" />
     <Folder Include="WordExplorer\" />
   </ItemGroup>
   <ItemGroup>
@@ -80,6 +91,7 @@
     <Content Include="app\templates\app\layout.html" />
     <Content Include="app\templates\app\login.html" />
     <Content Include="app\templates\app\loginpartial.html" />
+    <Content Include="WordApp\templates\index.html" />
   </ItemGroup>
   <ItemGroup>
     <None Include="readme.mht">
