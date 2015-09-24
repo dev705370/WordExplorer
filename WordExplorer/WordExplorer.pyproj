@@ -31,6 +31,14 @@
     <Compile Include="app\forms.py" />
     <Compile Include="app\models.py" />
     <Compile Include="app\tests.py" />
+    <Compile Include="DictonaryBuilder\admin.py" />
+    <Compile Include="DictonaryBuilder\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictonaryBuilder\models.py" />
+    <Compile Include="DictonaryBuilder\tests.py" />
+    <Compile Include="DictonaryBuilder\views.py" />
+    <Compile Include="DictonaryBuilder\__init__.py" />
     <Compile Include="WordApp\admin.py" />
     <Compile Include="WordApp\autocomplete_light_registry.py" />
     <Compile Include="WordApp\urls.py">
@@ -57,11 +65,24 @@
     <Folder Include="app\static\app\scripts\" />
     <Folder Include="app\templates\" />
     <Folder Include="app\templates\app\" />
+    <Folder Include="DictonaryBuilder\" />
+    <Folder Include="DictonaryBuilder\templates\" />
     <Folder Include="WordApp\" />
     <Folder Include="WordApp\templates\" />
     <Folder Include="WordExplorer\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DictonaryBuilder\templates\base.html" />
+    <Content Include="DictonaryBuilder\templates\index.html" />
+    <Content Include="DictonaryBuilder\templates\logged_out.html" />
+    <Content Include="DictonaryBuilder\templates\password_change_done.html" />
+    <Content Include="DictonaryBuilder\templates\password_change_form.html" />
+    <Content Include="DictonaryBuilder\templates\password_reset_complete.html" />
+    <Content Include="DictonaryBuilder\templates\password_reset_confirm.html" />
+    <Content Include="DictonaryBuilder\templates\password_reset_done.html" />
+    <Content Include="DictonaryBuilder\templates\password_reset_email.html" />
+    <Content Include="DictonaryBuilder\templates\password_reset_form.html" />
+    <Content Include="DictonaryBuilder\templates\register.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />

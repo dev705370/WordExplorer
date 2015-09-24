@@ -95,8 +95,8 @@ SECRET_KEY = 'n(bd1f1c%e8=_xad02x5qtfn%wgwpi492e$8_erx+d)!tpeoim'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
-    'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
+    'django.template.loaders.filesystem.Loader',
 #     'django.template.loaders.eggs.Loader',
 )
 
@@ -120,7 +120,10 @@ TEMPLATE_DIRS = (
     # "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    #path.join(PROJECT_ROOT, '/DictonaryBuilder/templates/register.html').replace('\\', '/'),
 )
+
+AUTH_PROFILE_MODULE = 'DictonaryBuilder.Builder'
 
 INSTALLED_APPS = (
     'django.contrib.auth',
@@ -129,6 +132,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'DictonaryBuilder',
     'app',
     'WordApp',
     # Uncomment the next line to enable the admin:
