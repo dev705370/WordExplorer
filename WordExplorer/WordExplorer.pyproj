@@ -74,14 +74,7 @@
   <ItemGroup>
     <Content Include="DictonaryBuilder\templates\base.html" />
     <Content Include="DictonaryBuilder\templates\index.html" />
-    <Content Include="DictonaryBuilder\templates\logged_out.html" />
-    <Content Include="DictonaryBuilder\templates\password_change_done.html" />
-    <Content Include="DictonaryBuilder\templates\password_change_form.html" />
-    <Content Include="DictonaryBuilder\templates\password_reset_complete.html" />
-    <Content Include="DictonaryBuilder\templates\password_reset_confirm.html" />
-    <Content Include="DictonaryBuilder\templates\password_reset_done.html" />
-    <Content Include="DictonaryBuilder\templates\password_reset_email.html" />
-    <Content Include="DictonaryBuilder\templates\password_reset_form.html" />
+    <Content Include="DictonaryBuilder\templates\login.html" />
     <Content Include="DictonaryBuilder\templates\register.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />

@@ -16,15 +16,20 @@ class RegistrationForm(ModelForm):
         def clean_username(self):
             username = self.cleaned_data['username']
             try:
-                User.object.get(username = username)
+                User.objects.get(username = username)   
             except User.DoesNotExist:
                 return username
             raise forms.ValidationError('Username already exist. Select something else.')
 
-        def clean_password(self):
+        def clean(self):
             password = self.cleaned_data['password']
             password1 = self.cleaned_data['password1']
             if password != password1 :
                 forms.ValidationError('Passwords does not match. Please try again.')
             else :
-                return password
+                return self.cleaned_data
+
+
+class LoginForm(forms.Form):
+    username    = forms.CharField(label = (u'Username'))
+    password    = forms.CharField(label = (u'Password'), widget = forms.PasswordInput(render_value = False))
